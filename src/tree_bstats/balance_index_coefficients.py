@@ -362,7 +362,7 @@ class BalanceIndexCoefficients:
 
     # Corrected Colless index
     def _calculate_corrected_colless_coef(self) -> Tuple[Optional[NDArray[np.float64]], NDArray[np.float64]]:
-        '''Calculates the coefficients for the s-hat shape statistic for a tree of size n.
+        '''Calculates the coefficients for the corrected Colless index for a tree of size n.
 
         Returns:
             Tuple[NDArray[np.float64], NDArray[np.float64]]: 
@@ -375,7 +375,7 @@ class BalanceIndexCoefficients:
 
     # I_2 index
     def _calculate_I2_coef(self) -> Tuple[Optional[NDArray[np.float64]], NDArray[np.float64]]:
-        '''Calculates the coefficients for the s-hat shape statistic for a tree of size n.
+        '''Calculates the coefficients for the I_2 index fora tree of size n.
 
         Returns:
             Tuple[NDArray[np.float64], NDArray[np.float64]]: 
