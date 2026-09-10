@@ -290,7 +290,7 @@ class Tree:
         15. Mean-I'
         16. Symmetry Nodes
         17. Rogers J
-        18. Rooted Quartet Index
+        18. Rooted quartet Index
         19. Colijn-Plazzotta Rank
         20. Furnas Rank
         21. Total Internal Path Length
@@ -326,10 +326,10 @@ class Tree:
         Returns:
             List[str]: A list of the names of the balance indices that can be computed for the tree
         '''
-        return ["Sackin index", "Average leaf depth", "Variance of leaf depths", "Total cophenetic index", "$\\hat{s}$-shape", "B1 index", 
-                "B2 index", "Colless index", "Corrected Colless index", "$I_2$ index", "Quadratic Colless index", "Total I index", "Mean I index", 
-                "Total I' index", "Mean I' index", "Symmetry nodes index", 
-                "Rogers J index", "Rooted Quartet index for binary trees", "Colijn-Plazzotta rank", "Furnas rank", "Total internal path length",
+        return ["Sackin index", "Average leaf depth", "Variance of leaf depths", "Total cophenetic index", "$\\hat{s}$-shape statistic", "$B_1$ index", 
+                "$B_2$ index", "Colless index", "Corrected Colless index", "$I_2$ index", "Quadratic Colless index", "Total $I$ index", "Mean $I$ index", 
+                "Total $I\'$ index", "Mean $I\'$ index", "Symmetry nodes index", 
+                "Rogers $J$ index", "Rooted quartet index for binary trees", "Colijn-Plazzotta rank", "Furnas rank", "Total internal path length",
                 "Total path length", "Average vertex depth", "Maximum depth", "Maximum width",
                 "Modified maximum difference in widths", "Maximum width over maximum depth", "stairs1 index", "stairs2 index"]
 
@@ -576,10 +576,10 @@ class Tree:
         return int(tot)
 
     def rQIB(self) -> int:
-        '''Compute the Rooted Quartet Index (rQIB) of the tree
+        '''Compute the Rooted quartet Index (rQIB) of the tree
 
         Returns:
-            int: the Rooted Quartet Index of the tree
+            int: the Rooted quartet Index of the tree
         '''
         tot = 0
         for pair in self.daughter_sizes:

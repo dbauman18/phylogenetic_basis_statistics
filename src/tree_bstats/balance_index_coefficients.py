@@ -139,15 +139,15 @@ class BalanceIndexCoefficients:
             'Sackin index': self._calculate_sackin_coef,
             'Average leaf depth': self._calculate_avg_leaf_depth_coef,
             'Total cophenetic index': self._calculate_tot_cophenetic_coef,
-            '$\\hat{s}$-shape': self._calculate_s_hat_shape_coef,
+            '$\\hat{s}$-shape statistic': self._calculate_s_hat_shape_coef,
             'Colless index': self._calculate_colless_coef,
             'Corrected Colless index': self._calculate_corrected_colless_coef,
-            'I2 index': self._calculate_I2_coef,
+            '$I_2$ index': self._calculate_I2_coef,
             'Quadratic Colless index': self._calculate_quad_colless_coef,
-            'Total I index': self._calculate_total_I_coef,
-            'Total I\' index': self._calculate_total_I_prime_coef,
-            'Rogers J index': self._calculate_rogers_J_coef,
-            'Rooted Quartet index for binary trees': self._calculate_rooted_quartet_coef,
+            'Total $I$ index': self._calculate_total_I_coef,
+            'Total $I\'$ index': self._calculate_total_I_prime_coef,
+            'Rogers $J$ index': self._calculate_rogers_J_coef,
+            'Rooted quartet index for binary trees': self._calculate_rooted_quartet_coef,
             'Total internal path length': self._calculate_tot_internal_path_length_coef,
             'Total path length': self._calculate_tot_path_length_coef,
             'Average vertex depth': self._calculate_avg_vertex_depth_coef,
@@ -175,7 +175,7 @@ class BalanceIndexCoefficients:
         Returns:
             List[str]: List of labels for the clade basis coefficients.
         '''
-        return ['Sackin index', 'Average leaf depth', 'Total cophenetic index', '\hat{s}-shape', 'Quadratic Colless index',
+        return ['Sackin index', 'Average leaf depth', 'Total cophenetic index', '$\\hat{s}$-shape statistic', 'Quadratic Colless index',
                 'Total internal path length', 'Total path length', 'Average vertex depth',]
     
 
@@ -185,9 +185,9 @@ class BalanceIndexCoefficients:
         Returns:
             List[str]: List of labels for the daughter basis coefficients.
         '''
-        return ['Sackin index', 'Average leaf depth', 'Total cophenetic index', '$\\hat{s}$-shape', 'Colless index', 
-                'Corrected Colless index', '$I_2$ index', 'Quadratic Colless index', 'Total I index', 'Total I\' index', 
-                'Rogers J index', 'Rooted Quartet index for binary trees', 'Total internal path length', 'Total path length', 
+        return ['Sackin index', 'Average leaf depth', 'Total cophenetic index', '$\\hat{s}$-shape statistic', 'Colless index', 
+                'Corrected Colless index', '$I_2$ index', 'Quadratic Colless index', 'Total $I$ index', 'Total $I\'$ index', 
+                'Rogers $J$ index', 'Rooted quartet index for binary trees', 'Total internal path length', 'Total path length', 
                 'Average vertex depth', 'stairs1 index', 'stairs2 index']
 
     def get_statistic_coefficient(self, statistic: str, basis: str) -> NDArray[np.float64]:
