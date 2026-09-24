@@ -12,7 +12,7 @@ from typing import Dict, Union, List
 balance_index_names = Tree().get_balance_names()
 index_formulas = nameFormulas
 colors = cm.gist_earth(np.linspace(0, 0.8, len(balance_index_names)))
-markers = ['o', '^', 's', '>', 'D', 'x']
+markers = ['o', '^', 's', '>', 'D', 'X']
 linestyles = ['-', '--', ':']
 
 def plot_params(statistic: str) -> Dict[str, Union[str, List[float]]]:
