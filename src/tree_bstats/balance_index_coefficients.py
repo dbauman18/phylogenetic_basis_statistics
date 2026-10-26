@@ -421,7 +421,7 @@ class BalanceIndexCoefficients:
         for k in range(len(self.daughter_ij)):
             i, j = self.daughter_ij[k]
             if i + j >= 4:
-                b_ij[k] = (j - np.floor((i + j) / 2)) / (i + j - 1 - np.floor((i + j) / 2))
+                b_ij[k] = (j - np.ceil((i + j) / 2)) / (i + j - 1 - np.ceil((i + j) / 2))
         return a_k, b_ij
 
     # Total I' index
@@ -439,7 +439,7 @@ class BalanceIndexCoefficients:
         for k in range(len(self.daughter_ij)):
             i, j = self.daughter_ij[k]
             if i + j >= 4:
-                b_ij[k] = (j - np.floor((i + j) / 2)) / (i + j - 1 - np.floor((i + j) / 2))
+                b_ij[k] = (j - np.ceil((i + j) / 2)) / (i + j - 1 - np.ceil((i + j) / 2))
                 if (i + j) % 2 == 0:
                     b_ij[k] *= (i + j - 1) / (i + j)
         return a_k, b_ij

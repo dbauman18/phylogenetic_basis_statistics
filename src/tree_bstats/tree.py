@@ -494,7 +494,7 @@ class Tree:
             nv = pair[0] + pair[1]
             n_max = max(pair)
             if nv >= 4:
-                tot += (n_max - np.floor(nv/2))/((nv-1) - np.floor(nv/2))
+                tot += (n_max - np.ceil(nv/2))/((nv-1) - np.ceil(nv/2))
         return float(tot)
     
     def mean_I(self) -> float:
@@ -510,7 +510,7 @@ class Tree:
             n_max = max(pair)
             if nv >= 4:
                 denominator += 1
-                sum += (n_max - np.floor(nv/2))/((nv-1) - np.floor(nv/2))
+                sum += (n_max - np.ceil(nv/2))/((nv-1) - np.ceil(nv/2))
         if denominator == 0:
             return 0
         return float(sum / denominator)
@@ -526,7 +526,7 @@ class Tree:
             nv = pair[0] + pair[1]
             n_max = max(pair)
             if nv >= 4:
-                Iv = (n_max - np.floor(nv/2))/((nv-1) - np.floor(nv/2))
+                Iv = (n_max - np.ceil(nv/2))/((nv-1) - np.ceil(nv/2))
                 if nv % 2 == 0:
                     tot += Iv * (nv - 1) / nv
                 else:
@@ -546,7 +546,7 @@ class Tree:
             n_max = max(pair)
             if nv >= 4:
                 denominator += 1
-                Iv = (n_max - np.floor(nv/2))/((nv-1) - np.floor(nv/2))
+                Iv = (n_max - np.ceil(nv/2))/((nv-1) - np.ceil(nv/2))
                 if nv % 2 == 0:
                     sum += Iv * (nv - 1) / nv
                 else:
