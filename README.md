@@ -9,20 +9,20 @@ The repository computes tree balance indices for rooted binary tree topologies. 
 ```
 phylogenetic_basis_statistics/
 ├── src/tree_bstats/                    # Python package
-│   ├── tree.py                         # Tree: one unlabeled rooted binary topology + 29 balance indices
+│   ├── tree.py                         # Tree: one unlabeled rooted binary topology + 29 balance indices (Table 1)
 │   ├── unlabelled_tree.py              # UnlabelledTree: enumerates all topologies up to size n, with Yule/uniform weights
-│   ├── clade_basis.py                  # Mean / covariance of clade-number vectors under the Yule model
-│   ├── daughter_basis.py               # Mean / covariance of daughter-number vectors under the Yule model
-│   ├── balance_index_coefficients.py   # Basis coefficients for the 17 indices represented by the bases
-│   ├── indices.py                      # Index names and their LaTeX formula labels
+│   ├── clade_basis.py                  # Mean / covariance of clade-number vectors under the Yule model (Theorem 5.10)
+│   ├── daughter_basis.py               # Mean / covariance of daughter-number vectors under the Yule model (Theorem 5.11)
+│   ├── balance_index_coefficients.py   # Basis coefficients for the 17 indices represented by the bases (Appendix A)
+│   ├── indices.py                      # Index names and their LaTeX formula labels (Table 1)
 │   └── plotting_params.py              # Plot styling for each index
 ├── notebooks/
 │   ├── plot_figures.ipynb              # Makes every figure in the paper (main text and appendix)
-│   ├── statisticMeans.ipynb            # Checks the means against enumeration and closed-form formulas
-│   ├── statisticCorrelations.ipynb     # Checks the covariance/correlation matrix against enumeration
+│   ├── statisticMeans.ipynb            # Checks the means against enumeration and closed-form formulas (Table 2)
+│   ├── statisticCorrelations.ipynb     # Checks the covariance/correlation matrix against enumeration (Figure 3)
 │   └── appendixC.ipynb                 # Shows that mean I and mean I' are not in the daughter-number basis (Appendix C)
 ├── mathematica/
-│   └── MeanCalculations.nb             # Symbolic derivation of closed-form means (equations A.1–A.29)
+│   └── MeanCalculations.nb             # Symbolic derivation of closed-form means (Table 2)
 ├── plots/                              # Figures written by plot_figures.ipynb
 ├── pyproject.toml                      # Package metadata for tree_bstats
 └── requirements.txt                    # Pinned versions used for the paper
@@ -105,10 +105,10 @@ print(trees.count_trees())   # [1, 1, 1, 2, 3, 6, 11, 23]
 
 ## Citation
 
-If you use this code, please cite:
+If you use this code, please cite the paper:
 
 ```
-[CITATION]
+Basis statistics for phylogenetic tree shape: tree balance formulas beyond expectations. Bauman, Daniel J and Rosenberg, Noah A. Submitted. 
 ```
 
 ## License
