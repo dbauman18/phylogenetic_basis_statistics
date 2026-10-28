@@ -1,5 +1,6 @@
 # Ignore virtual environments
 venv/
+.venv/
 
 # Ignore Python bytecode and caches
 __pycache__/
@@ -18,3 +19,8 @@ __pycache__/
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore packaging build artifacts
+*.egg-info/
+build/
+dist/

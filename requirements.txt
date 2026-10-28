@@ -1,6 +1,10 @@
-numpy
-matplotlib
-pandas
-scipy
-sympy
-scikit-learn
+# Exact versions used to produce the results in the paper (Python 3.14.7).
+# `pip install -r requirements.txt` also installs the tree_bstats package in editable mode.
+numpy==2.5.3
+scipy==1.18.1
+sympy==1.14.0
+pandas==3.0.5
+matplotlib==3.11.2
+scikit-learn==1.9.1
+ipykernel==7.3.0
+-e .
