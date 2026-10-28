@@ -1,6 +1,6 @@
 # phylogenetic_basis_statistics
 
-Code accompanying the paper **Basis statistics for phylogenetic tree shape: \\ tree balance formulas beyond expectations** (Bauman, Daniel J and Rosenberg, Noah A, Submitted, 2026).
+Code accompanying the paper **Basis statistics for phylogenetic tree shape: tree balance formulas beyond expectations** (Bauman, Daniel J and Rosenberg, Noah A, Submitted, 2026).
 
 The repository computes tree balance indices for rooted binary tree topologies. It represents them as linear combinations of the **clade-number basis** and the **daughter-number basis**, and uses those representations to get exact means, variances, covariances and correlations of the indices under the Yule model. The notebooks check these results against brute-force enumeration of all trees and produce the figures in the paper.
 
