@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    272077,       7008]
-NotebookOptionsPosition[    258828,       6777]
-NotebookOutlinePosition[    259296,       6795]
-CellTagsIndexPosition[    259253,       6792]
+NotebookDataLength[    272485,       7018]
+NotebookOptionsPosition[    259140,       6786]
+NotebookOutlinePosition[    259608,       6804]
+CellTagsIndexPosition[    259565,       6801]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -6769,7 +6769,16 @@ Cell[BoxData[
  CellChangeTimes->{4.0022877761084156`*^9},
  CellLabel->
   "Out[101]=",ExpressionUUID->"79417118-cf06-a041-9c42-a816a7ac14d4"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "Everything", " ", "simplifies", " ", "correctly", " ", "to", " ", "verify",
+    " ", "the", " ", "formula"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{4.002288052080824*^9, 
+  4.0022880691273365`*^9}},ExpressionUUID->"0c801b5c-6f24-1c4d-b6b6-\
+b393352a06c5"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -7005,7 +7014,8 @@ Cell[253688, 6620, 1276, 40, 95, "Output",ExpressionUUID->"ee266645-10ff-cb49-89
 Cell[CellGroupData[{
 Cell[255001, 6665, 3560, 98, 170, "Input",ExpressionUUID->"ccc57da2-56c6-9241-8834-055a62df077c"],
 Cell[258564, 6765, 200, 5, 38, "Output",ExpressionUUID->"79417118-cf06-a041-9c42-a816a7ac14d4"]
-}, Open  ]]
+}, Open  ]],
+Cell[258779, 6773, 309, 7, 33, "Input",ExpressionUUID->"0c801b5c-6f24-1c4d-b6b6-b393352a06c5"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -7013,6 +7023,4 @@ Cell[258564, 6765, 200, 5, 38, "Output",ExpressionUUID->"79417118-cf06-a041-9c42
 }
 ]
 *)
-
-(* End of internal cache information *)
 
